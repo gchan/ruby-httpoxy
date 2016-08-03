@@ -2,7 +2,9 @@
 
 require 'webrick'
 
-server = WEBrick::HTTPServer.new(Port: 4000, DocumentRoot: Dir.pwd)
+port = ENV['PORT'] || 4000
+
+server = WEBrick::HTTPServer.new(Port: port, DocumentRoot: Dir.pwd)
 
 Signal.trap('SIGINT') { server.shutdown }
 server.start
