@@ -77,8 +77,8 @@ RUN set -x \
   && apk add --virtual .httpd-rundeps $runDeps \
   && apk del .build-deps
 
-COPY ./httpd/httpd-foreground /usr/local/bin/
-COPY ./httpd/httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY ./httpd-foreground /usr/local/bin/
+COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
 
 RUN mkdir -p /httpoxy
 COPY . /httpoxy
