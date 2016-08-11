@@ -1,4 +1,8 @@
-# Ruby HTTPoxy PoC
+# Ruby HTTPoxy PoC (gordonchan/ruby-httpoxy)
+
+[![](https://images.microbadger.com/badges/image/gordonchan/ruby-httpoxy.svg)](http://microbadger.com/images/gordonchan/ruby-httpoxy "Get your own image badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/gordonchan/ruby-apache-httpoxy.svg)](http://microbadger.com/images/gordonchan/ruby-apache-httpoxy "Get your own image badge on microbadger.com")
 
 A somewhat contrived example of the [HTTPoxy](https://httpoxy.org/) vulnerability for a Ruby WEBrick server that is serving CGI scripts. Demonstrates:
 
